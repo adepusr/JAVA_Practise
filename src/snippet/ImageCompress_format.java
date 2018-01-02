@@ -34,7 +34,7 @@ public class ImageCompress_format {
 			bufferedImage = ImageIO.read(new File("C:\\Users\\adepu\\Desktop\\Collection 1057 Modernist Cincinnati\\"+append+".tif"));
 			BufferedImage newBufferedImage = new BufferedImage(bufferedImage.getWidth(),bufferedImage.getHeight(), BufferedImage.TYPE_INT_RGB);
 			newBufferedImage.createGraphics().drawImage(bufferedImage, 0, 0, Color.WHITE, null);
-			ImageIO.write(newBufferedImage, "jpeg", new File("C:\\Users\\adepu\\Desktop\\Collection 1057 Modernist Cincinnati-compressed\\"+append+".jpg"));
+			ImageIO.write(newBufferedImage, "jpeg", new File("C:\\Users\\adepu\\Desktop\\Collection 1057\\"+append+".jpg"));
 			System.out.println("Done "+i);
 			}
 			catch(Exception e){
